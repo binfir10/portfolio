@@ -1,0 +1,186 @@
+
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+/* geist-mono-latin-100-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-100-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-100-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-200-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-200-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-200-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-300-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-300-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-300-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-400-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-400-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-500-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-500-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-500-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-600-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-600-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-600-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-700-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-700-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-700-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-800-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-800-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-800-normal.woff) format('woff');
+}
+
+/* geist-mono-latin-900-normal */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url(@fontsource/geist-mono/files/geist-mono-latin-900-normal.woff2) format('woff2'), url(@fontsource/geist-mono/files/geist-mono-latin-900-normal.woff) format('woff');
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 47.9 95.8% 53.1%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 60 4.8% 90.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 20 0.3% 7.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 47.9 95.8% 53.1%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 35.5 91.7% 32.9%;
+  }
+}
+
+ 
+@layer base {
+  * {
+        scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+font-family: 'Geist Mono', monospace;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen ;
+  }
+    section {
+      @apply max-w-[900px] m-auto container py-4
+    }
+  }
+  @layer utilities {
+  h1 {
+    @apply text-4xl font-extrabold tracking-tight lg:text-5xl ;
+  }
+
+  h2{
+    @apply  text-3xl font-semibold tracking-tight first:mt-0 text-secondary-foreground ;
+  }
+
+  h3 {
+    @apply  text-2xl font-semibold tracking-tight text-secondary-foreground;
+  }
+
+  h4 {
+    @apply  text-sm text-foreground/80;
+  }
+  p {
+    @apply leading-6  text-muted-foreground text-sm text-pretty
+  }
+
+  .print {
+    display: none;
+  }
+}
+
+@media print {
+  .projectGrid {
+    @apply grid-cols-2
+  }
+  
+  .print {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-print {
+    display: none;
+  }
+}

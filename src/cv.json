@@ -1,0 +1,261 @@
+{
+  "basics": {
+    "name": "Brian Andres Figueroa",
+    "label": "Desarrollador Frontend",
+    "image": "/perfil.webp",
+    "email": "bryan09figueroa@gmail.com",
+    "phone": "+54 91130369700",
+    "url": "https://midu.dev",
+    "summary": "Soy un apasionado desarrollador de software de 27 años. Me considero un entusiasta autodidacta de la tecnología y el desarrollo web. En los últimos 2 años, me he sumergido en el mundo del desarrollo frontend, donde he adquirido experiencia trabajando con una amplia variedad de tecnologías. Siempre estoy ansioso por aprender nuevas tecnologías y técnicas.",
+    "location": {
+      "address": "",
+      "postalCode": "1663",
+      "city": "San Miguel, Buenos Aires",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "brianfigueroa",
+        "url": "https://www.linkedin.com/in/brian-figueroa1996"
+      },
+      {
+        "network": "GitHub",
+        "username": "binfir10",
+        "url": "https://github.com/binfir10"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Dia %",
+      "position": "Operario",
+      "startDate": "2023",
+      "endDate": "2024",
+      "summary": "He trabajado en picking, carga y descarga de materiales, tareas generales de logística y mantenimiento de la limpieza y el orden del lugar de trabajo."
+    },
+    {
+      "name": "Pyme Velas Richard",
+      "position": "Analista de Proveedores",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2022",
+      "endDate": "2022",
+      "summary": "He gestionado el contacto con proveedores, la negociación de condiciones de pago y la búsqueda de nuevos proveedores.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Tasa Logistica",
+      "position": "Operario",
+      "startDate": "2020",
+      "endDate": "2020",
+      "summary": "He realizado carga y descarga de materiales, picking, paletizado de cajas y bolsas, tareas generales de logística, y mantenimiento de la limpieza y el orden del lugar de trabajo.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+     {
+      "name": "Binser S.A.",
+      "position": "Asistente de Técnico en Refrigeración",
+      "startDate": "2011-03-01",
+      "endDate": "2016-05-01",
+      "summary": "He provisto materiales y herramientas, movido y levantado materiales para su colocación, y mantenido la limpieza y el orden del lugar de trabajo.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "education": [{
+    "institution": "Universidad de Nacional de General Sarmiento",
+    "area": "Ingeniero de Software",
+    "startDate": "2021",
+    "endDate": null
+  }, 
+  {
+    "institution": "Nucba",
+    "area": "Desarrolador Web Full Stack",
+    "startDate": "2022",
+    "endDate": "2023"
+  }
+],
+
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+        {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+        {
+      "name": "Vue.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+        {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+
+        {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Basic"
+    }
+  ],
+  "projects": [
+    {
+      "name": "El Poder de la Cruz",
+      "description": "Pagina hecha para Iglesia",
+      "technologies": [
+        "Next Js",
+        "Tailwind",
+        "React",
+        "MongoDB",
+        "Supabase",
+        "Prisma",
+        "Cloudinary"
+      ],
+      "url": "https://elpoderdelacruz.vercel.app/",
+      "github": null
+    },
+       {
+      "name": "TecnoPhone",
+      "description": "Pagina de venta de celulares",
+      "technologies": [
+        "React",
+        "Javascript"
+
+      ],
+      "url": "https://tecno-phone.vercel.app/",
+      "github": "https://github.com/binfir10/TecnoPhone-React"
+    },
+       {
+      "name": "Snapgram",
+      "description": "Red Social inspirada en Instagram",
+      "technologies": [
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Appwrite"
+
+      ],
+      "url": "https://snapg.vercel.app/",
+      "github": "https://github.com/binfir10/redSocial"
+    },
+       {
+      "name": "FinanzTracker",
+      "description": "App de seguimiento de tus gastos",
+      "technologies": [
+        "Next Js",
+        "Tailwind",
+        "Prisma",
+        "Clerk",
+        "VercelPostgres"
+      ],
+      "url": "https://finanz-tracker-app.vercel.app/",
+      "github": "https://github.com/binfir10/Tracker-app/tree/main"
+    },
+       {
+      "name": "VueShop",
+      "description": "Simple Tienda con vue Js.",
+      "technologies": [
+        "Vue",
+        "Javascript",
+        "Vite"
+      ],
+      "url": "https://bf-vue-shop.vercel.app/",
+      "github": "https://github.com/binfir10/VueShop"
+    },
+       {
+      "name": "TecnoPhone Api" ,
+      "description": "Api para la pagina TecnoPhone",
+      "technologies": [
+        "Typescript",
+        "bcrypt",
+        "Express",
+        "MongoDB",
+        "Nodemailer"
+
+      ],
+      "url": "https://github.com/binfir10/tecnoAPI",
+      "github": "https://github.com/binfir10/tecnoAPI"
+    }
+  ]
+}

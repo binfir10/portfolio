@@ -1,0 +1,45 @@
+---
+import { projects } from "@/cv.json";
+import { Badge } from "./ui/badge";
+import GitHub from "@/icons/GitHub.astro";
+---
+
+<section id="projects">
+  <h2>Proyectos</h2>
+  <ul class="gap-3 grid grid-cols-1 md:grid-cols-2 projectGrid">
+    {
+      projects.map((proyect) => (
+        <li>
+          <article class="rounded-xl border p-4 gap-4 flex flex-col h-full">
+            <header>
+              <div class="flex items-center gap-1">
+                <a
+                  href={proyect.url}
+                  target="_blank"
+                  title="{proyect.name}"
+                  class="flex items-center hover:underline">
+                  <h3 class="text-lg">{proyect.name} </h3>
+                  {proyect.github ? (
+                    <a
+                      class="text-sm text-pretty no-print"
+                      href={proyect.github}
+                      target="_blank">
+                      <GitHub />
+                    </a>
+                  ) : null}
+                </a>
+              </div>
+
+              <p class="text-sm">{proyect.description}</p>
+            </header>
+            <footer class="flex items-center gap-2 flex-wrap no-print">
+              {proyect.technologies.map((technology) => (
+                <Badge variant={"secondary"}>{technology}</Badge>
+              ))}
+            </footer>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -1,0 +1,87 @@
+---
+import { basics } from "../cv.json";
+import GitHub from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import { Button } from "./ui/button";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+};
+
+const linkedinInfo = profiles.find((profile) => profile.network === "LinkedIn");
+
+const linkedinUrl = linkedinInfo?.url;
+---
+
+<section>
+  <div class="flex justify-between items-center gap-2">
+    <div class="flex flex-col">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+
+      <footer class="flex gap-2 mt-3 flex-col">
+        <span class="flex items-center gap-1 text-muted-foreground text-sm">
+          <WorldMap />
+          {city}, {region}
+        </span>
+        <div class="flex flex-col text-sm print">
+          <span>Email: {email} </span>
+          <span>Tel: {phone}</span>
+        </div>
+        <div class="no-print flex gap-2">
+          <Button variant="outline" size="icon">
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center p-1 rounded size-9 transition-all ease-in-out">
+              <Mail />
+            </a>
+          </Button>
+
+          <Button variant="outline" size="icon">
+            <a
+              href={`mailto:${email}`}
+              title={`Llama a ${name} al telefono ${phone}`}
+              target="_blank"
+              class="inline-flex items-center justify-center p-1 rounded size-9 transition-all ease-in-out">
+              {" "}
+              <Phone />
+            </a>
+          </Button>
+
+          {
+            profiles.map(({ network, url }) => {
+              const Icon = SOCIAL_ICONS[network];
+              return (
+                <Button variant="outline" size="icon">
+                  <a
+                    href={url}
+                    title={`Ir a ${name} en ${network}`}
+                    target="_blank"
+                    class="inline-flex items-center justify-center  p-1 rounded size-9 transition-all ease-in-out  ">
+                    <Icon />
+                  </a>
+                </Button>
+              );
+            })
+          }
+        </div>
+      </footer>
+    </div>
+    <figure>
+      <img
+        src={image}
+        alt={name}
+        class="size-64 rounded-md aspect-square object-cover"
+      />
+    </figure>
+  </div>
+</section>

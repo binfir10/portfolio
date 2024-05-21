@@ -1,0 +1,19 @@
+---
+import { skills } from "@/cv.json";
+import { Badge } from "@/components/ui/badge";
+---
+
+<section>
+  <h2>Skills</h2>
+  <ul class="inline-flex gap-2 flex-wrap max-w-[600px]">
+    {
+      skills.map(({ name }) => (
+        <li class="flex gap-4">
+          <Badge variant={"secondary"} className="my-1">
+          {name}
+          </Badge>
+        </li>
+      ))
+    }
+  </ul>
+</section>
