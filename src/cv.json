@@ -5,7 +5,6 @@
     "image": "/perfil.webp",
     "email": "bryan09figueroa@gmail.com",
     "phone": "+54 91130369700",
-    "url": "https://midu.dev",
     "summary": "Soy un apasionado desarrollador de software de 27 años. Me considero un entusiasta autodidacta de la tecnología y el desarrollo web. En los últimos 2 años, me he sumergido en el mundo del desarrollo frontend, donde he adquirido experiencia trabajando con una amplia variedad de tecnologías. Siempre estoy ansioso por aprender nuevas tecnologías y técnicas.",
     "location": {
       "address": "",
@@ -59,8 +58,8 @@
      {
       "name": "Binser S.A.",
       "position": "Asistente de Técnico en Refrigeración",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
+      "startDate": "2019",
+      "endDate": "2019",
       "summary": "He provisto materiales y herramientas, movido y levantado materiales para su colocación, y mantenido la limpieza y el orden del lugar de trabajo.",
       "highlights": [
         "Started the company"
@@ -71,7 +70,7 @@
     "institution": "Universidad de Nacional de General Sarmiento",
     "area": "Ingeniero de Software",
     "startDate": "2021",
-    "endDate": null
+    "endDate": "2024"
   }, 
   {
     "institution": "Nucba",

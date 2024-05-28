@@ -2,6 +2,7 @@
 import { projects } from "@/cv.json";
 import { Badge } from "./ui/badge";
 import GitHub from "@/icons/GitHub.astro";
+import { Card } from "./ui/card";
 ---
 
 <section id="projects">
@@ -10,24 +11,24 @@ import GitHub from "@/icons/GitHub.astro";
     {
       projects.map((proyect) => (
         <li>
-          <article class="rounded-xl border p-4 gap-4 flex flex-col h-full">
+          <Card className="rounded-xl border p-4 gap-4 flex flex-col h-full">
             <header>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center gap-2">
                 <a
                   href={proyect.url}
                   target="_blank"
                   title="{proyect.name}"
                   class="flex items-center hover:underline">
                   <h3 class="text-lg">{proyect.name} </h3>
-                  {proyect.github ? (
-                    <a
-                      class="text-sm text-pretty no-print"
-                      href={proyect.github}
-                      target="_blank">
-                      <GitHub />
-                    </a>
-                  ) : null}
                 </a>
+                {proyect.github ? (
+                  <a
+                    class=" no-print flex items-center justify-center"
+                    href={proyect.github}
+                    target="_blank">
+                    <GitHub />
+                  </a>
+                ) : null}
               </div>
 
               <p class="text-sm">{proyect.description}</p>
@@ -37,7 +38,7 @@ import GitHub from "@/icons/GitHub.astro";
                 <Badge variant={"secondary"}>{technology}</Badge>
               ))}
             </footer>
-          </article>
+          </Card>
         </li>
       ))
     }

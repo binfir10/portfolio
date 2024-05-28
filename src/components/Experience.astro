@@ -6,30 +6,32 @@ import { work } from "@/cv.json";
   <h2>Experiencia</h2>
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position,  summary }) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : null;
-          const years = `${startYear}${endYear ? ` - ${endYear}` : ""}`;
-          return (
-            <li>
-              <article class="flex flex-col my-10 first:mt-0">
-                <header class="flex justify-between items-start">
-                  <div class="flex items-center gap-3" >
-                    <h3 class="font-black text-xl">{position}</h3>
-                    <h4 class="font-semibold text-base">{name}</h4>
-                  </div>
-                  <time>{years}</time>
-                </header>
-                <footer>
-                  <p class="text-sm text-pretty">{summary}</p>
-                </footer>
-              </article>
-            </li>
-          );
-        }
-      )
+      work.map(({ name, startDate, endDate, position, summary }) => {
+        return (
+          <li>
+            <article class="flex flex-col my-10 first:mt-0">
+              <header class="flex justify-between items-start">
+                <div class="flex items-center gap-3">
+                  <h3 class="font-black text-xl">{position}</h3>
+                  <h4 class="font-semibold text-base">{name}</h4>
+                </div>
+                <div>
+                  <time datetime={startDate} data-title={startDate}>
+                    {startDate}
+                  </time>
+                  {" - "}
+                  <time datetime={endDate} data-title={endDate}>
+                    {endDate}
+                  </time>
+                </div>
+              </header>
+              <footer>
+                <p class="text-sm text-pretty">{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </section>

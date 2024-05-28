@@ -6,27 +6,27 @@ import { education } from "@/cv.json";
   <h2>Educación</h2>
   <ul>
     {
-      education.map(
-        ({ institution, area, endDate, startDate}) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : null;
-          const years = `${startYear}${endYear ? ` - ${endYear}` : ""}`;
-          return (
-            
-            <li>
-              <article class="flex my-6 first:mt-2 justify-between items-start">
-                  <div>
-                    <h3 class="font-bold text-xl">{institution}</h3>
-                    <p class="font-semibold text-base">{area}</p>
-                  </div>
-                  <time>{years}</time>
-
-              </article>
-            </li>
-          );
-        }
-      )
+      education.map(({ institution, area, endDate, startDate }) => {
+        return (
+          <li>
+            <article class="flex my-6 first:mt-2 justify-between items-start">
+              <div>
+                <h3 class="font-bold text-xl">{institution}</h3>
+                <p class="font-semibold text-base">{area}</p>
+              </div>
+              <div>
+                <time datetime={startDate} data-title={startDate}>
+                  {startDate}
+                </time>
+                {" - "}
+                <time datetime={endDate} data-title={endDate}>
+                  {endDate}
+                </time>
+              </div>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </section>
