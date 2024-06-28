@@ -33,10 +33,14 @@ import { Card } from "./ui/card";
 
               <p class="text-sm">{proyect.description}</p>
             </header>
-            <footer class="flex items-center gap-2 flex-wrap no-print">
-              {proyect.technologies.map((technology) => (
-                <Badge variant={"secondary"}>{technology}</Badge>
-              ))}
+            <p class="print break-words text-sm text-pretty ">{proyect.github ? proyect.github : proyect.url}</p>
+
+            <footer class="flex  gap-2 flex-col flex-wrap no-print">
+              <div>
+                {proyect.technologies.map((technology) => (
+                  <Badge variant={"secondary"}>{technology}</Badge>
+                ))}
+              </div>
             </footer>
           </Card>
         </li>

@@ -14,9 +14,9 @@ const SOCIAL_ICONS: Record<string, any> = {
   LinkedIn,
 };
 
-const linkedinInfo = profiles.find((profile) => profile.network === "LinkedIn");
+const linkedinInfo = profiles.find((profile) => profile.network === "GitHub");
 
-const linkedinUrl = linkedinInfo?.url;
+const GithubUrl = linkedinInfo?.url;
 ---
 
 <section>
@@ -33,6 +33,7 @@ const linkedinUrl = linkedinInfo?.url;
         <div class="flex flex-col text-sm print">
           <span>Email: {email} </span>
           <span>Tel: {phone}</span>
+          <span>Github: {GithubUrl}</span>
         </div>
         <div class="no-print flex gap-2">
           <Button variant="outline" size="icon">

@@ -37,7 +37,6 @@
     {
       "name": "Pyme Velas Richard",
       "position": "Analista de Proveedores",
-      "url": "https://twitch.tv/midudev",
       "startDate": "2022",
       "endDate": "2022",
       "summary": "He gestionado el contacto con proveedores, la negociación de condiciones de pago y la búsqueda de nuevos proveedores.",
@@ -191,7 +190,7 @@
         "Prisma",
         "Cloudinary"
       ],
-      "url": "https://elpoderdelacruz.vercel.app/",
+      "url": "https://elpoderdelacruz.vercel.app",
       "github": null
     },
        {
@@ -230,6 +229,32 @@
       ],
       "url": "https://finanz-tracker-app.vercel.app/",
       "github": "https://github.com/binfir10/Tracker-app/tree/main"
+    },
+        {
+      "name": "Canciones EPDLC",
+      "description": "Una lista de canciones con acordes y letras",
+      "technologies": [
+        "Next Js",
+        "Tailwind",
+        "Typescript",
+        "React",
+        "Turso DB"
+      ],
+      "url": "https://canciones-epdlc.vercel.app/",
+      "github": "https://github.com/binfir10/songs-church"
+    },
+        {
+      "name": "Liguro",
+      "description": "App de organizacion de tareas",
+      "technologies": [
+        "Next Js",
+        "Tailwind",
+        "Typescript",
+        "Supabase",
+        "Shadcn"
+      ],
+      "url": "https://liguro-app.vercel.app/",
+      "github": "https://github.com/binfir10/liguro-app"
     },
        {
       "name": "VueShop",
